@@ -1,30 +1,4 @@
-# satellite-cloud-removal-dip
-[![MDPI](https://img.shields.io/badge/Open_Access-MDPI-green)](https://www.mdpi.com/2072-4292/14/6/1342) [![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cidcom/satellite-cloud-removal-dip/blob/main/01-Example-Use-colab.ipynb) [![DOI:10.1007/978-3-319-76207-4_15](https://zenodo.org/badge/DOI/10.3390/rs14061342.svg)](https://doi.org/10.3390/rs14061342)
-
-Official code for the paper (access at https://www.mdpi.com/2072-4292/14/6/1342):
-```bibtex
-@article{rs14061342,
-author = {Czerkawski, Mikolaj and Upadhyay, Priti and Davison, Christopher and Werkmeister, Astrid and Cardona, Javier and Atkinson, Robert and Michie, Craig and Andonovic, Ivan and Macdonald, Malcolm and Tachtatzis, Christos},
-title = {Deep Internal Learning for Inpainting of Cloud-Affected Regions in Satellite Imagery},
-journal = {Remote Sensing},
-volume = {14},
-year = {2022},
-number = {6},
-article-number = {1342},
-url = {https://www.mdpi.com/2072-4292/14/6/1342},
-ISSN = {2072-4292},
-DOI = {10.3390/rs14061342}
-}
-```
-Please cite accordingly if any part of the repository is used.
-
-## :cloud: Removing clouds with Deep Image Prior
-[Deep Image Prior](https://dmitryulyanov.github.io/deep_image_prior) can be used for inpainting image areas in an internal fashion, without requiring anything other than the image itself and **the mask of the inpainted region**.
-
-Furthermore, you can easily use any other collocated sources of information, like historical optical image without clouds, or a SAR optical image. In the example notebook `01-Example-Use`, we show how to do it with example data that includes two extra sources of information.
-
-![Example Result](example_result.png?raw=true "Title")
-
+# satellite-cloud-removal
 ## :computer: Implementation
 This is all you need to do to set up the model:
 ```python
@@ -87,5 +61,3 @@ torch==1.8.1
 numpy=1.19.2
 rasterio=1.0.21
 ```
-
-> Please feel free to post any issues via GitHub, or pass them directly to mikolaj.czerkawski@strath.ac.uk
